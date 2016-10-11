@@ -1,0 +1,216 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding: 20px;
+	color: #666;	
+}
+table{
+	border-collapse: collapse;
+	text-align: center;
+	width: 1000px;
+}
+thead tr{
+	height: 30px;
+	border-top: 3px solid #e5e5e5;
+}
+th,td{
+	border: 1px solid #e5e5e5;
+}
+td{
+	padding: 10px;
+}
+.checkbox{
+	width: 80px;
+}
+.goods{
+	width: 400px;
+}
+.goods img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-right: 10px;
+}
+.goods span{
+	width: 250px;
+	float: left;
+	text-align: left;
+	margin-top: 20px;
+}
+.price{
+	width: 100px;
+}
+.count{
+	width: 170px;
+}
+.count .reduce,.count input,.count .add{
+	float: left;
+	margin-right: -1px;
+	z-index: 0;
+	position: relative;
+}
+.count .reduce,.count .add{
+	width: 17px;
+	height: 23px;
+	line-height: 23px;
+	border: 1px solid #e5e5e5;
+	background: #f0f0f0;
+	text-align: center;
+	color: #444;
+}
+.count .reduce{
+	margin-left: 32px;
+}
+.count .reduce:hover,.count .add:hover{
+	color: #f50;
+	border-color: #f60;
+	cursor: pointer;
+	z-index: 3;
+}
+.count input{
+	width: 50px;
+	height: 15px;
+	border: 1px solid #aaa;
+	color: #343434;
+	line-height: 15px;
+	padding: 4px 0;
+	text-align: center;
+	z-index: 2;
+	background-color: #fff;
+}
+.subTotal{
+	width: 100px;
+	color: red;
+	font-weight: bold;
+	font-family: "Microsoft Yahei"
+}
+.operation{
+	width: 150px;
+}
+.delete:hover{
+	color: orangered;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.foot{
+	position: relative;
+	width: 998px;
+	height: 48px;
+	margin-top: 10px;
+	border: 1px solid #c8c8c8;
+	background-color: #eaeaea;
+	background-image: linear-gradient(RGB(241,241,241),RGB(226,226,226));
+	z-index: 8;
+}
+.foot a,.foot .select-all,.foot div{
+	height: 48px;
+	line-height: 48px;
+}
+.foot a{
+	text-decoration: none;
+	color: #666;
+}
+.foot .select-all{
+	width: 100px;
+	padding-left: 10px;
+}
+.foot .settlement{
+	width: 100px;
+	color: #fff;
+	background: orangered;	
+	font-weight: bold;
+	font-family: "Microsoft Yahei";
+	text-align: center;
+	cursor: pointer;
+}
+.foot .total{
+	margin: 0 50px;
+}
+.foot #total,.foot #selected-count{
+	font-weight: bold;
+	font-family: "Microsoft Yahei";
+	color: orangered;
+}
+.foot .selected{
+	cursor: pointer;
+}
+.foot .selected:hover .arrow{
+	color: orangered;
+}
+.foot .selected .arrow{
+	margin-left: 3px;
+	position: relative;
+	top: -3px;
+}
+.foot .selected .down{
+	top: 3px;
+	display: none;
+}
+.foot .selectedView{
+	width: 998px;
+	border: 1px solid #c8c8c8;
+	height: auto;
+	position: absolute;
+	z-index: 9;
+	bottom: 48px;
+	left: -1px;
+	background: #fff;
+	display: none;
+}
+.foot .selectedView div{
+	height: auto;
+}
+.show .selectedView {
+    display: block;
+}
+#selectedViewList {
+    padding: 20px;
+    margin-bottom: -20px;
+}
+#selectedViewList div{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 80px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+#selectedViewList div span {
+    display: none;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 60px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    background: RGBA(0,0,0,.5);
+    cursor: pointer;
+}
+#selectedViewList div:hover span{
+	display: block;
+}
+.foot .selectedView .arrow {
+    font-size: 16px;
+    line-height: 100%;
+    color:#c8c8c8;
+    position: absolute;
+    right: 330px;
+    bottom: -9px;
+}
+.foot .selectedView .arrow span {
+    color: #fff;
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+}

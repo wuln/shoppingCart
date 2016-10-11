@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>我的购物车</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<script type="text/javascript" src="js/cart.js"></script>
+</head>
+<body>
+	<table id="cart">
+		<thead>
+			<tr>
+				<th>
+					<label><input type="checkbox" class="check-all check">&nbsp;全选</label>
+				</th>
+				<th>商品</th>
+				<th>单价（元）</th>
+				<th>数量</th>
+				<th>小计（元）</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="checkbox"><input type="checkbox" class="check-one check"></td>
+				<td class="goods">
+					<img src="img/1.jpg" alt="1">
+					<span>全球购 Apple正品港版 银色 iPad mini2 16G 平板电脑</span>
+				</td>
+				<td class="price">1698.00</td>
+				<td class="count">
+					<span class="reduce"></span>
+					<input type="text" class="input-count" value="1">
+					<span class="add">+</span>
+				</td>
+				<td class="subTotal">1698.00</td>
+				<td class="operation"><span class="delete">删除</span></td>
+			</tr>
+			<tr>
+				<td class="checkbox"><input type="checkbox" class="check-one check"></td>
+				<td class="goods">
+					<img src="img/2.jpg" alt="2">
+					<span>Apple iPhone 5s (A1530) 16GB 金色 移动联通4G手机</span>
+				</td>
+				<td class="price">2398.00</td>
+				<td class="count">
+					<span class="reduce"></span>
+					<input type="text" class="input-count" value="1">
+					<span class="add">+</span>
+				</td>
+				<td class="subTotal">2398.00</td>
+				<td class="operation"><span class="delete">删除</span></td>
+			</tr>
+			<tr>
+				<td class="checkbox"><input type="checkbox" class="check-one check"></td>
+				<td class="goods">
+					<img src="img/3.jpg" alt="3">
+					<span>Apple iPhone 5s (A1530) 16GB 深空灰色 移动联通4G手机</span>
+				</td>
+				<td class="price">2588.00</td>
+				<td class="count">
+					<span class="reduce"></span>
+					<input type="text" class="input-count" value="1">
+					<span class="add">+</span>
+				</td>
+				<td class="subTotal">2588.00</td>
+				<td class="operation"><span class="delete">删除</span></td>
+			</tr>
+			<tr>
+				<td class="checkbox"><input type="checkbox" class="check-one check"></td>
+				<td class="goods">
+					<img src="img/4.jpg" alt="4">
+					<span>Apple iPad Air 9.7英寸 WLAN版 银色16G MD788CH</span>
+				</td>
+				<td class="price">2388.00</td>
+				<td class="count">
+					<span class="reduce"></span>
+					<input type="text" class="input-count" value="1">
+					<span class="add">+</span>
+				</td>
+				<td class="subTotal">2388.00</td>
+				<td class="operation"><span class="delete">删除</span></td>
+			</tr>
+		</tbody>		
+	</table>
+	<div id="foot" class="foot">
+		<label class="fl select-all"><input type="checkbox" class="check-all check">&nbsp;全选</label>
+		<a href="javascript:;" class="fl delete" id="delete-all">删除</a>
+		<div class="fr settlement" id="settlement">结&nbsp;算</div>
+		<div class="fr total">合计：￥<span id="total">0.00</span></div>
+		<div class="fr selected" id="selected">已选商品
+			<span id="selected-count">0</span>&nbsp;件
+			<span class="arrow up">︽</span>
+			<span class="arrow down">︾</span>
+		</div>	
+		<div class="selectedView">
+			<div id="selectedViewList" class="clearfix">
+				<!-- <div>
+					<img src="img/1.jpg" alt="1">
+					<span>取消选择</span>
+				</div>
+				<div>
+					<img src="img/2.jpg" alt="2">
+					<span>取消选择</span>
+				</div> -->
+			</div>
+			<span class="arrow">◆
+				<span>◆</span>
+			</span>
+		</div>				
+	</div>
+</body>
+</html>
